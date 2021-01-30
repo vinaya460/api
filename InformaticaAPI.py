@@ -52,7 +52,7 @@ class InformaticaAPI(Connection):
         # Convert objectID to safe encoding
         objectID = self.encodeID(objectID, tilde=True)
 
-        url = f"{self.catalogService}/access/2/catalog/data/objects/{objectID}?includeRefObjects=true"
+        url = f"{self.catalogService}/access/2/catalog/data/objects/{objectID}?includeRefObjects=false"
         return Connection.getResponseJSON(self, url)
 
     def search(self, query, offset=0):
