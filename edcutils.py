@@ -297,16 +297,16 @@ def getCatalogResourceCount(url, user, pWd):
     return callGETRestEndpoint(apiURL, user, pWd)
 
 if __name__ == "__main__":
-    getCatalogResourceCount(url='', user='', pWd='')
+    getCatalogResourceCount(url='', user='API_USER', pWd='API')
     getCatalogObjectCount(url='', user='', pWd=='')
     getResourceObjectCount(url='', user='', pWd, resourceName)
-    callGETRestEndpoint(apiURL, user, pWd)
-    getResourceObjectCount(url, user, pWd, resourceName)
-    executeResourceLoad(url, user, pWd, resourceName)
-    uploadResourceFile(url, user, pWd, resourceName, fileName, fullPath, scannerId)
-    createResource(url, user, pWd, resourceName, resourceJson)
-    updateResourceDef(url, user, pWd, resourceName, resJson)
-    getAllResource(url, user, pWd)
+    callGETRestEndpoint(apiURL='', user='', pWd='')
+    getResourceObjectCount(url='', user='', pWd='', resourceName='')
+    executeResourceLoad(url='', user='', pWd='', resourceName='')
+    uploadResourceFile(url='', user='', pWd='', resourceName='', fileName='', fullPath='', scannerId='')
+    createResource(url='', user='', pWd='', resourceName='', resourceJson='')
+    updateResourceDef(url='', user='', pWd='', resourceName='', resJson='')
+    getAllResource(url='', user=='', pWd='')
     
     
     
